@@ -583,3 +583,34 @@ header {
     margin: 0 auto;
     margin-top: 30px;
 }
+
+.conditions .conditions_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: #F7F6F0;
+    border-radius: 2px;
+    margin-right: 20px;
+    width: calc(33.333% - 20px);
+}
+
+.conditions .conditions_box:last-child {
+    margin-right: 0;
+}
+
+.conditions .conditions_box h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.8px;
+    color: var(--Accent-color);
+    margin-bottom: 10px;
+}
+
+.conditions .conditions_box .p2 {
+    color: var(--Accent-color);
+}
