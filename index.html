@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,27 +15,27 @@
         <div class="wrapper">
             <div class="header">
                 <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="">
+                    <img src="./img/logo.svg" alt="img">
                 </a>
                 <div class="header_right_content flex_a">
-                    <a href="" class="wa_link flex_a"><img src="./img/icon/wa.svg" alt=""></a>
+                    <a href="" class="wa_link flex_a"><img src="./img/icon/wa.svg" alt="img"></a>
                     <button class="white_border_btn">Заказать звонок</button>
                     <div class="lang_selector" id="langSelector">
                         <div class="select_lang flex_a">
                             <img src="./img/icon/ru.svg" alt="Русский">
                             <p class="p2">RU</p>
-                            <img src="./img/icon/down_arrow.svg" alt="">
+                            <img src="./img/icon/down_arrow.svg" alt="img">
                         </div>
 
                         <div class="lang_dropdown">
-                            <div class="lang_option flex_a" data-lang="en">
+                            <a href="" class="lang_option flex_a" data-lang="en">
                                 <img src="./img/icon/ru.svg" alt="English">
                                 <p class="p2">EN</p>
-                            </div>
-                            <div class="lang_option flex_a" data-lang="ru">
+                            </a>
+                            <a href="" class="lang_option flex_a" data-lang="ru">
                                 <img src="./img/icon/ru.svg" alt="Русский">
                                 <p class="p2">RU</p>
-                            </div>
+                            </a>
 
                         </div>
                     </div>
@@ -44,50 +43,52 @@
             </div>
         </div>
     </header>
-    <section id="main">
+    <section class="section_main">
         <div class="main_img">
-            <img src="./img/main.jpg" alt="">
+            <img src="./img/main.jpg" alt="img">
         </div>
         <div class="wrapper">
             <div class="main">
                 <div class="eh_logo">
-                    <img src="./img/eh_logo.svg" alt="">
+                    <img src="./img/eh_logo.svg" alt="img">
                 </div>
                 <p>Резиденции с апартаментами класса «ультра-люкс»</p>
-                <div class="main_flex flex">
-                    <div class="main_flex_box flex_f flex_a">
-                        <h3>AED 4.95M</h3>
-                        <p class="p2">Начальная цена </p>
+                <div class="mobile_main  flex_f flex_a">
+                    <div class="main_flex flex">
+                        <div class="main_flex_box flex_f flex_a">
+                            <h3>AED 4.95M</h3>
+                            <p class="p2">Начальная цена </p>
+                        </div>
+                        <div class="main_flex_box flex_f flex_a">
+                            <h3>Q2 2028</h3>
+                            <p class="p2">Дата сдачи</p>
+                        </div>
+                        <div class="main_flex_box flex_f flex_a">
+                            <h3>50/50</h3>
+                            <p class="p2">Платежный план</p>
+                        </div>
                     </div>
-                    <div class="main_flex_box flex_f flex_a">
-                        <h3>Q2 2028</h3>
-                        <p class="p2">Дата сдачи</p>
-                    </div>
-                    <div class="main_flex_box flex_f flex_a">
-                        <h3>50/50</h3>
-                        <p class="p2">Платежный план</p>
-                    </div>
-                </div>
-                <div class="main_flex_btn flex_a">
-                    <button class="white_btn">
+                    <div class="main_flex_btn flex_a">
+                        <button class="white_btn">
                         Скачать брошюру
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M9.99228 1.66553C9.53228 1.66553 9.15895 2.03861 9.15895 2.49886V11.3005L6.65894 8.8272L5.48727 9.99887L9.39312 13.9314C9.71895 14.2564 10.2656 14.2564 10.5914 13.9314L14.4973 9.99887L13.3256 8.8272L10.8256 11.3005V2.49886C10.8256 2.03861 10.4523 1.66544 9.99228 1.66553ZM3.32561 11.6655C2.86561 11.6655 2.49227 12.0389 2.49227 12.4989V14.1655C2.49227 16.0064 3.98477 17.4989 5.82561 17.4989H14.159C15.9998 17.4989 17.4923 16.0064 17.4923 14.1655V12.4989C17.4923 12.0389 17.119 11.6655 16.659 11.6655C16.199 11.6655 15.8256 12.0389 15.8256 12.4989V14.1655C15.8256 15.0864 15.0798 15.8322 14.159 15.8322H5.82561C4.90478 15.8322 4.15894 15.0864 4.15894 14.1655V12.4989C4.15894 12.0389 3.78561 11.6655 3.32561 11.6655Z" fill="#68462F"/>
                             <path d="M9.99228 1.66553C9.53228 1.66553 9.15895 2.03861 9.15895 2.49886V11.3005L6.65894 8.8272L5.48727 9.99887L9.39312 13.9314C9.71895 14.2564 10.2656 14.2564 10.5914 13.9314L14.4973 9.99887L13.3256 8.8272L10.8256 11.3005V2.49886C10.8256 2.03861 10.4523 1.66544 9.99228 1.66553ZM3.32561 11.6655C2.86561 11.6655 2.49227 12.0389 2.49227 12.4989V14.1655C2.49227 16.0064 3.98477 17.4989 5.82561 17.4989H14.159C15.9998 17.4989 17.4923 16.0064 17.4923 14.1655V12.4989C17.4923 12.0389 17.119 11.6655 16.659 11.6655C16.199 11.6655 15.8256 12.0389 15.8256 12.4989V14.1655C15.8256 15.0864 15.0798 15.8322 14.159 15.8322H5.82561C4.90478 15.8322 4.15894 15.0864 4.15894 14.1655V12.4989C4.15894 12.0389 3.78561 11.6655 3.32561 11.6655Z" fill="black" fill-opacity="0.2"/>
                         </svg>
                     </button>
-                    <button class="blur_btn">
+                        <button class="blur_btn">
                         Оставить заявку
                     </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about">
+    <section class="section_about">
         <div class="wrapper">
             <div class="about flex_a">
                 <div class="about_info">
-                    <label for="" class="label_h2">О проекте</label>
+                    <span class="label_h2">О проекте</span>
                     <h2>Eden House Za’abeel</h2>
                     <p class="p2">Eden House Za’abeel — комплекс резиденций с апартаментами в сердце района DIFC, финансового центра Дубая. В комплексе представлены видовые апартаменты с 1, 2, 3 спальнями. Девелопер проекта — H&H, ведущий застройщик проектов класса
                         «ультра-люкс» в Дубае.</p>
@@ -107,25 +108,87 @@
                     </button>
                 </div>
                 <div class="about_swiper">
+                    <div class="about__slider swiper">
+                        <div class="swiper-wrapper">
 
+                            <div class="swiper-slide">
+                                <div class="cover-bg">
+                                    <img src="img/about/1.jpg" alt="img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cover-bg">
+                                    <img src="img/about/2.jpg" alt="img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cover-bg">
+                                    <img src="img/about/3.jpg" alt="img">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <button class="about__swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M15 9L6 18M6 18L15 27M6 18H28.5" stroke="#222222" stroke-linecap="square"/>
+                    </svg>
+                </button>
+                        <button class="about__swiper-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M21 9L30 18M30 18L21 27M30 18H7.5" stroke="#222222" stroke-linecap="square"/>
+                    </svg>
+                </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="full_img">
-        <img src="./img/full_screan/full_one.jpg" alt="">
-    </section>
-    <section id="advantages">
+    <section class="section_mobile_eden_house">
         <div class="wrapper">
-            <div class="advantages flex_a">
+            <div class="bottom_line flex_f">
+                <div class="bottom_line_box">
+                    <p>Eden House Za’abeel</p>
+                    <p class="p3">112 м² / 1,202 ft² — 282 м² / 3,037 ft²</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>1-3 BHK</p>
+                    <p class="p3">Ультра-люкс класса</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>x2-x3 в цене</p>
+                    <p class="p3">К концу строительства</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>Q2 2028</p>
+                    <p class="p3">Сдача проекта</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section_full_img">
+        <div class="full_img">
+            <img src="./img/full_screan/full_one.jpg" alt="img">
+        </div>
+    </section>
+    <section class="section_advantages">
+        <div class="wrapper">
+            <div class="advantages advantages_pc flex_a">
                 <div class="advantages_img">
-                    <img src="./img/adv.jpg" alt="">
+                    <img src="./img/advantages/1.jpg" alt="img" class="active">
+                    <img src="./img/advantages/2.jpg" alt="img">
+                    <img src="./img/advantages/3.jpg" alt="img">
+                    <img src="./img/advantages/4.jpg" alt="img">
+                    <img src="./img/advantages/5.jpg" alt="img">
                 </div>
                 <div class="advantages_info flex_f">
-                    <label for="" class="label_h2">Удобства и преимущества</label>
+                    <span class="label_h2">Удобства и преимущества</span>
                     <h2>Eden House Za’abeel</h2>
                     <ul class="number_list">
-                        <li>
+                        <li class="active">
                             <button>Общественные пространства</button>
                         </li>
                         <li>
@@ -156,96 +219,185 @@
                     </button>
                 </div>
             </div>
+            <div class="advantages advantages_mob">
+                <span class="label_h2">Удобства и преимущества</span>
+                <h2>Eden House Za’abeel</h2>
+                <div class="advantages_mob_content">
+                    <div class="advantages_box">
+                        <div class="advantages_box_img">
+                            <img src="./img/advantages/1.jpg" alt="">
+                        </div>
+                        <div class="advantages_info">
+                            <span>01</span>
+                            <p>Общественные пространства</p>
+                        </div>
+                    </div>
+                    <div class="advantages_box">
+                        <div class="advantages_box_img">
+                            <img src="./img/advantages/2.jpg" alt="">
+                        </div>
+                        <div class="advantages_info">
+                            <span>02</span>
+                            <p>Открытый и крытый бассейны</p>
+                        </div>
+                    </div>
+                    <div class="advantages_box">
+                        <div class="advantages_box_img">
+                            <img src="./img/advantages/3.jpg" alt="">
+                        </div>
+                        <div class="advantages_info">
+                            <span>03</span>
+                            <p>Фитнес-центр с тренажерным залом</p>
+                        </div>
+                    </div>
+                    <div class="advantages_box">
+                        <div class="advantages_box_img">
+                            <img src="./img/advantages/4.jpg" alt="">
+                        </div>
+                        <div class="advantages_info">
+                            <span>04</span>
+                            <p>Спа-зона с сауной</p>
+                        </div>
+                    </div>
+                    <div class="advantages_box">
+                        <div class="advantages_box_img">
+                            <img src="./img/advantages/5.jpg" alt="">
+                        </div>
+                        <div class="advantages_info">
+                            <span>05</span>
+                            <p>Приватные озелененные дворики</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="transparent_btn">Узнать обо всех преимуществах 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_11216_14451)">
+                        <path d="M26.5157 15.3536C26.7109 15.1583 26.7109 14.8417 26.5157 14.6464L23.3337 11.4645C23.1384 11.2692 22.8218 11.2692 22.6266 11.4645C22.4313 11.6597 22.4313 11.9763 22.6266 12.1716L25.455 15L22.6266 17.8284C22.4313 18.0237 22.4313 18.3403 22.6266 18.5355C22.8218 18.7308 23.1384 18.7308 23.3337 18.5355L26.5157 15.3536ZM6.16211 15V15.5L26.1621 15.5V15V14.5L6.16211 14.5V15Z" fill="#68462F"/>
+                        <path d="M26.5157 15.3536C26.7109 15.1583 26.7109 14.8417 26.5157 14.6464L23.3337 11.4645C23.1384 11.2692 22.8218 11.2692 22.6266 11.4645C22.4313 11.6597 22.4313 11.9763 22.6266 12.1716L25.455 15L22.6266 17.8284C22.4313 18.0237 22.4313 18.3403 22.6266 18.5355C22.8218 18.7308 23.1384 18.7308 23.3337 18.5355L26.5157 15.3536ZM6.16211 15V15.5L26.1621 15.5V15V14.5L6.16211 14.5V15Z" fill="black" fill-opacity="0.2"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11216_14451">
+                        <rect width="30" height="30" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+
+                </button>
+            </div>
         </div>
     </section>
-    <section id="gallery">
+    <section class="section_gallery">
         <div class="wrapper">
             <div class="gallery_title flex_a flex_j">
-                <h2>Галерея</h2>
+                <h2>Галерея проекта</h2>
                 <div class="gallery_tabs flex_a">
-                    <button class="active">
-                        Экстерьер
-                    </button>
-                    <button>
-                        Интерьер
-                    </button>
+                    <button class="tabs_btn active" data-tab="exterior">
+                    Экстерьер
+                </button>
+                    <button class="tabs_btn" data-tab="interior">
+                    Интерьер
+                </button>
                 </div>
             </div>
         </div>
-        <div class="gallery_content">
+
+        <div class="gallery_content" id="exterior-tab">
             <div class="swiper gallerySwiperMain">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/1.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/2.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/3.jpg" />
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2254)">
+                            <rect width="40" height="40" rx="20" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M17.6588 12.2472C17.2428 11.8836 16.6111 11.9261 16.2474 12.3417C15.8842 12.7577 15.9266 13.3895 16.3423 13.7531L23.4819 19.9999L16.3419 26.2471C15.9259 26.6108 15.8838 27.2425 16.2471 27.6581C16.6107 28.0742 17.2424 28.1166 17.6584 27.753L25.6583 20.7529C25.8755 20.5632 26 20.2885 26 19.9999C26 19.7114 25.8755 19.4371 25.6583 19.247L17.6588 12.2472Z" fill="#FEFEFE"/>
+                            </g>
+                            
+                        </svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2253)">
+                            <rect x="40" y="40" width="40" height="40" rx="20" transform="rotate(-180 40 40)" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M22.3412 27.7528C22.7572 28.1164 23.3889 28.0739 23.7526 27.6583C24.1158 27.2423 24.0734 26.6105 23.6577 26.2469L16.5181 20.0001L23.6581 13.7529C24.0741 13.3892 24.1162 12.7575 23.7529 12.3419C23.3893 11.9258 22.7576 11.8834 22.3416 12.247L14.3417 19.2471C14.1245 19.4368 14 19.7115 14 20.0001C14 20.2886 14.1245 20.5629 14.3417 20.753L22.3412 27.7528Z" fill="#FEFEFE"/>
+                            </g>
+                           
+                        </svg>
+                </div>
             </div>
             <div thumbsSlider="" class="swiper gallerySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/1.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/2.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/exterer/3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery_content" id="interior-tab" style="display:none;">
+            <div class="swiper gallerySwiperMainInterior">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/interior/1.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/interior/2.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/interior/3.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2254)">
+                            <rect width="40" height="40" rx="20" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M17.6588 12.2472C17.2428 11.8836 16.6111 11.9261 16.2474 12.3417C15.8842 12.7577 15.9266 13.3895 16.3423 13.7531L23.4819 19.9999L16.3419 26.2471C15.9259 26.6108 15.8838 27.2425 16.2471 27.6581C16.6107 28.0742 17.2424 28.1166 17.6584 27.753L25.6583 20.7529C25.8755 20.5632 26 20.2885 26 19.9999C26 19.7114 25.8755 19.4371 25.6583 19.247L17.6588 12.2472Z" fill="#FEFEFE"/>
+                            </g>
+                            
+                        </svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2253)">
+                            <rect x="40" y="40" width="40" height="40" rx="20" transform="rotate(-180 40 40)" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M22.3412 27.7528C22.7572 28.1164 23.3889 28.0739 23.7526 27.6583C24.1158 27.2423 24.0734 26.6105 23.6577 26.2469L16.5181 20.0001L23.6581 13.7529C24.0741 13.3892 24.1162 12.7575 23.7529 12.3419C23.3893 11.9258 22.7576 11.8834 22.3416 12.247L14.3417 19.2471C14.1245 19.4368 14 19.7115 14 20.0001C14 20.2886 14.1245 20.5629 14.3417 20.753L22.3412 27.7528Z" fill="#FEFEFE"/>
+                            </g>
+                           
+                        </svg>
+                </div>
+            </div>
+            <div thumbsSlider="" class="swiper gallerySwiperInterior">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/interior/1.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/interior/2.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/full_screan/full_one.jpg" />
+                        <img src="./img/interior/3.jpg" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="banner_form">
+    <section class="section_banner_form">
         <div class="wrapper">
             <div class="banner_form">
                 <h2 class="center_text">Eden House Za’abeel — получите полную информацию о проекте</h2>
@@ -261,7 +413,7 @@
             </div>
         </div>
     </section>
-    <section id="master_plan">
+    <section class="section_master_plan">
         <div class="wrapper">
 
             <div class="plan_title center_text flex_a flex_f">
@@ -273,7 +425,7 @@
             </div>
             <div class="plan flex">
                 <div class="plan_img">
-                    <img src="./img/plan.jpg" alt="">
+                    <img src="./img/plan.jpg" alt="img">
                 </div>
                 <div class="plan_content">
                     <ul>
@@ -308,15 +460,44 @@
         </div>
     </section>
 
-    <section id="infrastructure">
+    <section class="section_infrastructure">
         <div class="wrapper">
             <div class="infrastructure flex">
-                <div class="infrastructureSwipper">
-                    <img src="./img/infrastructure/one.jpg" alt="">
+                <div class="infrastructureSwipper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/infrastructure/1.jpg" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/infrastructure/2.jpg" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/infrastructure/3.jpg" alt="img">
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2254)">
+                            <rect width="40" height="40" rx="20" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M17.6588 12.2472C17.2428 11.8836 16.6111 11.9261 16.2474 12.3417C15.8842 12.7577 15.9266 13.3895 16.3423 13.7531L23.4819 19.9999L16.3419 26.2471C15.9259 26.6108 15.8838 27.2425 16.2471 27.6581C16.6107 28.0742 17.2424 28.1166 17.6584 27.753L25.6583 20.7529C25.8755 20.5632 26 20.2885 26 19.9999C26 19.7114 25.8755 19.4371 25.6583 19.247L17.6588 12.2472Z" fill="#FEFEFE"/>
+                            </g>
+                            
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_11028_2253)">
+                            <rect x="40" y="40" width="40" height="40" rx="20" transform="rotate(-180 40 40)" fill="#222222" fill-opacity="0.5"/>
+                            <path d="M22.3412 27.7528C22.7572 28.1164 23.3889 28.0739 23.7526 27.6583C24.1158 27.2423 24.0734 26.6105 23.6577 26.2469L16.5181 20.0001L23.6581 13.7529C24.0741 13.3892 24.1162 12.7575 23.7529 12.3419C23.3893 11.9258 22.7576 11.8834 22.3416 12.247L14.3417 19.2471C14.1245 19.4368 14 19.7115 14 20.0001C14 20.2886 14.1245 20.5629 14.3417 20.753L22.3412 27.7528Z" fill="#FEFEFE"/>
+                            </g>
+                           
+                        </svg>
+                    </div>
                 </div>
                 <div class="infrastructure_content flex_f flex_j">
                     <div class="infrastructure_title">
-                        <label for="" class="label_h2">Инфрастурктура</label>
+                        <span class="label_h2">Инфрастурктура</span>
                         <h2>Eden House Za’abeel</h2>
                     </div>
                     <ul>
@@ -346,7 +527,7 @@
             </div>
         </div>
     </section>
-    <section id="conditions">
+    <section class="section_conditions">
         <div class="wrapper">
             <div class="conditions_title center_text">
                 <h2>Гибкие условия покупки*</h2>
@@ -369,13 +550,17 @@
             <div class="conditions_box conditions_full">
                 <div class="conditions_full_cont">
                     <p>Рассрочка 0%. Выгодно и удобно для перепродажи или для проживания</p>
-                    <div class="p3">*Оригинальный платежный план на день старта продаж</div>
+                    <p class="p3">*Оригинальный платежный план на день старта продаж</p>
                 </div>
-                <button></button>
+                <button class="brown_btn">Скачать платежный план 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M10.4923 2.16577C10.0323 2.16577 9.65893 2.53886 9.65893 2.99911V11.8008L7.15892 9.32745L5.98725 10.4991L9.8931 14.4316C10.2189 14.7566 10.7656 14.7566 11.0914 14.4316L14.9973 10.4991L13.8256 9.32745L11.3256 11.8008V2.99911C11.3256 2.53886 10.9523 2.16569 10.4923 2.16577ZM3.82558 12.1658C3.36558 12.1658 2.99225 12.5391 2.99225 12.9991V14.6658C2.99225 16.5066 4.48475 17.9991 6.32559 17.9991H14.6589C16.4998 17.9991 17.9923 16.5066 17.9923 14.6658V12.9991C17.9923 12.5391 17.6189 12.1658 17.1589 12.1658C16.6989 12.1658 16.3256 12.5391 16.3256 12.9991V14.6658C16.3256 15.5866 15.5798 16.3325 14.6589 16.3325H6.32559C5.40475 16.3325 4.65892 15.5866 4.65892 14.6658V12.9991C4.65892 12.5391 4.28558 12.1658 3.82558 12.1658Z" fill="#F7F6F0"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
-    <section id="balance_plan">
+    <section class="section_balance_plan">
         <div class="wrapper">
 
             <div class="plan_title center_text flex_a flex_f">
@@ -417,11 +602,328 @@
                     </ul>
                 </div>
                 <div class="plan_img">
-                    <img src="./img/plan_balance.jpg" alt="">
+                    <img src="./img/plan_balance.jpg" alt="img">
                 </div>
             </div>
         </div>
     </section>
+    <section class="section_plan">
+        <div class="wrapper">
+            <div class="title_plan center_text flex_a flex_f">
+                <h2>Планировки Eden House Za’abeel</h2>
+                <div class="tabs_blan flex_a">
+                    <button class="tabs_btn active">1-комнатные</button>
+                    <button class="tabs_btn">2-комнатные</button>
+                    <button class="tabs_btn">3-комнатные</button>
+                </div>
+            </div>
+            <div class="content_plan_tabs">
+                <div class="content_tab ">
+                    <div class="content_tab_img">
+                        <img src="./img/plan/1.jpg" alt="img">
+                    </div>
+                    <div class="content_tab_detal">
+                        <h3>Апартаменты с 1 спальней</h3>
+                        <p class="p2"><b>Цена:</b>от AED 4.95M / USD 1.35M </p>
+                        <p class="p2"><b>Площадь:</b>от 112 м² / 1,202 ft²</p>
+                        <div class="content_tab_detal_info">
+                            <p class="p2">Балкон</p>
+                            <p class="p2">Гостиная</p>
+                            <p class="p2">Гостевой туалет</p>
+                            <p class="p2">Обеденная зона</p>
+                            <p class="p2">Главная спальня</p>
+                            <p class="p2">Закрытая кухня</p>
+
+                        </div>
+                        <button class="brown_btn">Скачать планировки
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.99229 2.2168C9.53229 2.2168 9.15896 2.58988 9.15896 3.05013V11.8518L6.65895 9.37847L5.48728 10.5501L9.39313 14.4826C9.71896 14.8076 10.2656 14.8076 10.5915 14.4826L14.4973 10.5501L13.3256 9.37847L10.8256 11.8518V3.05013C10.8256 2.58988 10.4523 2.21671 9.99229 2.2168ZM3.32561 12.2168C2.86561 12.2168 2.49228 12.5901 2.49228 13.0501V14.7168C2.49228 16.5576 3.98478 18.0501 5.82562 18.0501H14.159C15.9998 18.0501 17.4923 16.5576 17.4923 14.7168V13.0501C17.4923 12.5901 17.119 12.2168 16.659 12.2168C16.199 12.2168 15.8256 12.5901 15.8256 13.0501V14.7168C15.8256 15.6376 15.0798 16.3835 14.159 16.3835H5.82562C4.90478 16.3835 4.15895 15.6376 4.15895 14.7168V13.0501C4.15895 12.5901 3.78561 12.2168 3.32561 12.2168Z" fill="#FEFEFE"/>
+                            </svg>
+                        </button>
+                        <button class="transparent_btn">Забронировать юнит
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                <g clip-path="url(#clip0_11193_16903)">
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="#68462F"/>
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="black" fill-opacity="0.2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_11193_16903">
+                                <rect width="30" height="30" fill="white" transform="translate(0 0.551025)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="content_tab ">
+                    <div class="content_tab_img">
+                        <img src="./img/plan/2.jpg" alt="img">
+                    </div>
+                    <div class="content_tab_detal">
+                        <h3>Апартаменты с 2 спальнями</h3>
+                        <p class="p2"><b>Цена:</b>от AED 6.46M / USD 1.76M </p>
+                        <p class="p2"><b>Площадь:</b>от 217 м² / 2,341 ft²</p>
+                        <div class="content_tab_detal_info">
+                            <p class="p2">2 спальни</p>
+                            <p class="p2">Гостиная</p>
+                            <p class="p2">Балкон</p>
+                            <p class="p2">Обеденная зона</p>
+                            <p class="p2">Комната для прислуги</p>
+                            <p class="p2">Закрытая кухня</p>
+
+                        </div>
+                        <button class="brown_btn">Скачать планировки
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.99229 2.2168C9.53229 2.2168 9.15896 2.58988 9.15896 3.05013V11.8518L6.65895 9.37847L5.48728 10.5501L9.39313 14.4826C9.71896 14.8076 10.2656 14.8076 10.5915 14.4826L14.4973 10.5501L13.3256 9.37847L10.8256 11.8518V3.05013C10.8256 2.58988 10.4523 2.21671 9.99229 2.2168ZM3.32561 12.2168C2.86561 12.2168 2.49228 12.5901 2.49228 13.0501V14.7168C2.49228 16.5576 3.98478 18.0501 5.82562 18.0501H14.159C15.9998 18.0501 17.4923 16.5576 17.4923 14.7168V13.0501C17.4923 12.5901 17.119 12.2168 16.659 12.2168C16.199 12.2168 15.8256 12.5901 15.8256 13.0501V14.7168C15.8256 15.6376 15.0798 16.3835 14.159 16.3835H5.82562C4.90478 16.3835 4.15895 15.6376 4.15895 14.7168V13.0501C4.15895 12.5901 3.78561 12.2168 3.32561 12.2168Z" fill="#FEFEFE"/>
+                            </svg>
+                        </button>
+                        <button class="transparent_btn">Забронировать юнит
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                <g clip-path="url(#clip0_11193_16903)">
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="#68462F"/>
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="black" fill-opacity="0.2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_11193_16903">
+                                <rect width="30" height="30" fill="white" transform="translate(0 0.551025)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content_tab ">
+                    <div class="content_tab_img">
+                        <img src="./img/plan/3.jpg" alt="img">
+                    </div>
+                    <div class="content_tab_detal">
+                        <h3>Апартаменты с 3 спальнями</h3>
+                        <p class="p2"><b>Цена:</b>от AED 10.19M / USD 2.77M </p>
+                        <p class="p2"><b>Площадь:</b>от 282 м² / 3,037 ft²</p>
+                        <div class="content_tab_detal_info">
+                            <p class="p2">3 спальни</p>
+                            <p class="p2">Прачечная</p>
+                            <p class="p2">Балкон</p>
+                            <p class="p2">Обеденная зона</p>
+                            <p class="p2">Комната для прислуги</p>
+                            <p class="p2">Закрытая кухня</p>
+
+                        </div>
+                        <button class="brown_btn">Скачать планировки
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M9.99229 2.2168C9.53229 2.2168 9.15896 2.58988 9.15896 3.05013V11.8518L6.65895 9.37847L5.48728 10.5501L9.39313 14.4826C9.71896 14.8076 10.2656 14.8076 10.5915 14.4826L14.4973 10.5501L13.3256 9.37847L10.8256 11.8518V3.05013C10.8256 2.58988 10.4523 2.21671 9.99229 2.2168ZM3.32561 12.2168C2.86561 12.2168 2.49228 12.5901 2.49228 13.0501V14.7168C2.49228 16.5576 3.98478 18.0501 5.82562 18.0501H14.159C15.9998 18.0501 17.4923 16.5576 17.4923 14.7168V13.0501C17.4923 12.5901 17.119 12.2168 16.659 12.2168C16.199 12.2168 15.8256 12.5901 15.8256 13.0501V14.7168C15.8256 15.6376 15.0798 16.3835 14.159 16.3835H5.82562C4.90478 16.3835 4.15895 15.6376 4.15895 14.7168V13.0501C4.15895 12.5901 3.78561 12.2168 3.32561 12.2168Z" fill="#FEFEFE"/>
+                            </svg>
+                        </button>
+                        <button class="transparent_btn">Забронировать юнит
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                <g clip-path="url(#clip0_11193_16903)">
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="#68462F"/>
+                                <path d="M26.5157 15.9043C26.7109 15.7091 26.7109 15.3925 26.5157 15.1972L23.3337 12.0152C23.1384 11.82 22.8218 11.82 22.6266 12.0152C22.4313 12.2105 22.4313 12.5271 22.6266 12.7224L25.455 15.5508L22.6266 18.3792C22.4313 18.5745 22.4313 18.8911 22.6266 19.0863C22.8218 19.2816 23.1384 19.2816 23.3337 19.0863L26.5157 15.9043ZM6.16211 15.5508V16.0508H26.1621V15.5508V15.0508L6.16211 15.0508V15.5508Z" fill="black" fill-opacity="0.2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_11193_16903">
+                                <rect width="30" height="30" fill="white" transform="translate(0 0.551025)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_investment">
+        <div class="wrapper">
+            <div class="title center_text">
+                <h2>Инвестиционные возможности</h2>
+            </div>
+            <div class="investment flex">
+                <div class="investment_left">
+                    <p class="p2">
+                        Высокие арендная ставка и годовой доход — то, что делает проект Eden House Za’abeel выгодным для инвесторов. Это эксклюзивная недвижимость в премиальной локации, ее стоимость имеет перспективы для дальнейшего роста.
+                    </p>
+
+                    <div class="conditions flex_f">
+                        <button class="brown_btn flex_j">Бесплатная консультация
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                    <g clip-path="url(#clip0_11193_740)">
+                                    <path d="M26.5157 15.4561C26.7109 15.2608 26.7109 14.9442 26.5157 14.749L23.3337 11.567C23.1384 11.3717 22.8218 11.3717 22.6266 11.567C22.4313 11.7623 22.4313 12.0788 22.6266 12.2741L25.455 15.1025L22.6266 17.931C22.4313 18.1262 22.4313 18.4428 22.6266 18.6381C22.8218 18.8333 23.1384 18.8333 23.3337 18.6381L26.5157 15.4561ZM6.16211 15.1025V15.6025L26.1621 15.6025V15.1025V14.6025L6.16211 14.6025V15.1025Z" fill="#FEFEFE"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_11193_740">
+                                    <rect width="30" height="30" fill="white" transform="translate(0 0.102539)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        <div class="conditions_box">
+                            <h3>USD 12,035</h3>
+                            <p class="p2">Начальная цена за м²</p>
+                        </div>
+                        <div class="conditions_box">
+                            <h3>AED 4,118</h3>
+                            <p class="p2">Начальная цена за ft²</p>
+                        </div>
+                        <div class="conditions_box">
+                            <h3>х2-х3 роста в цене</h3>
+                            <p class="p2">К моменту завершения строительства</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="investment_right flex_f flex_j">
+                    <div class="investment_box">
+                        <h3>Для перепродажи</h3>
+                        <p class="p2">
+                            Годовая рентабельность недвижимости класса «ультра-люкс» в Дубае — 6-8%. Апартаменты в резиденциях Eden House Za'abeel открывают возможности для долгосрочного увеличения капитала за счет высокого дохода.
+                        </p>
+                    </div>
+                    <div class="investment_box">
+                        <h3>Для жизни </h3>
+                        <p class="p2">
+                            Eden House Za'abeel расположен в районе, который имеет статус финансового хаба и lifestyle-центра. Проживание в комплексе соответствует высоким требованиям к комфорту и безопасности.
+                        </p>
+                    </div>
+                    <div class="investment_box">
+                        <h3>Golden Visa</h3>
+                        <p class="p2">Покупка апартаментов в Eden House Za'abeel гарантирует Золотую визу для владельца и членов его семьи. Виза выдается бесплатно на 10 лет с возможностью продления.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <section class="section_form">
+        <div class="wrapper">
+            <div class="section_form_content flex">
+                <div class="form">
+                    <div class="content_form">
+                        <h2>Оставить заявку</h2>
+                        <p class="p3">
+                            Наш агент ответит на вопросы и поможет подобрать лот по вашим требованиям и бюджету. Укажите ваши контакты.
+                        </p>
+                        <form action="">
+
+                            <label for="">Имя</label>
+                            <input type="text">
+
+                            <label for="">Номер телефона</label>
+                            <input type="text">
+
+                            <label for="">Сообщение (опционально)</label>
+                            <textarea></textarea>
+
+                            <button class="brown_btn">Оставить заявку</button>
+                        </form>
+                        <div class="form_bottom_content flex_a flex_f">
+                            <p class="p3 flex_a">или быстрая связь в <span class="flex_a"><img src="./img/icon/wa_form.svg" alt="WhatsApp">WhatsApp</span></p>
+                            <div class="garant_info flex_a">
+                                <div class="garant_img">
+                                    <img src="./img/icon/garant.png" alt="гарант">
+                                </div>
+                                <p class="p3">Гарантируем конфиденциальность и защиту ваших данных</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_img">
+                    <img src="./img/form_img.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_faq">
+        <div class="wrapper">
+            <div class="title center_text">
+                <h2>Часто задаваемые вопросы</h2>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button"><p>Какие юниты представлены в Eden House Za'abeel?</p></button>
+                    <div class="accordion-content">
+                        <p class="p2">В резиденциях представлены апартаменты с 1, 2 и 3 спальнями, а также несколько пентхаусов. Во всех апартаментах — панорамные окна в пол, из которых открываются красивые виды на город, в некоторых лотах есть террасы.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button"><p>Почему стоит инвестировать в апартаменты в Eden House Za'abeel?</p></button>
+                    <div class="accordion-content">
+                        <p class="p2">Недвижимость в комплексе имеет высокий инвестиционный потенциал. Можно ориентироваться на средний показатель годовой рентабельности для объектов такого класса в Дубае — он составляет от 6 до 8%.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button"><p>Как будут расти в цене апартаменты в Eden House Za'abeel?</p></button>
+                    <div class="accordion-content">
+                        <p class="p2">Согласно прогнозам экспертов Ardang, стоимость недвижимости ежегодно и в среднем будет увеличиваться на 20%.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button"><p>Кто основная аудитория Eden House Za'abeel?</p></button>
+                    <div class="accordion-content">
+                        <p class="p2">Взыскательные покупатели, стремящиеся к балансу между динамичной жизнью Дубая и спокойствием, уединением. Это топ-менеджеры компаний, работающие в DIFC, бизнесмены, семьи с детьми.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="footer flex_a flex_f ">
+                <a href="" class="logo">
+                    <img src="./img/logo.svg" alt="img">
+                </a>
+                <div class="footer_info flex_a flex_f ">
+                    <p class="p2"><b>Schon Business Park, 29,<br> Dubai, UAE</b></p>
+                    <div class="footer_contact flex_a ">
+                        <a href="" class="wa_info flex_a "><img src="./img/icon/wa_green.svg" alt="img">
+                            <p class="p2"><b>WhatsApp</b></p>
+                        </a>
+                        <a href="" class="tel_info flex_a "><img src="./img/icon/tel.svg" alt="img">
+                            <p class="p2"><b>+971 11 111 1111</b></p>
+                        </a>
+                    </div>
+                    <p class="p3">Используя наш сайт, вы соглашаетесь с <a href="">политикой конфиденциальности</a> и <a href="">условиями оферты</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="section_bottom_line">
+        <div class="wrapper">
+            <div class="bottom_line flex_a flex_j">
+                <div class="bottom_line_box">
+                    <p>Eden House Za’abeel</p>
+                    <p class="p3">112 м² / 1,202 ft² — 282 м² / 3,037 ft²</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>1-3 BHK</p>
+                    <p class="p3">Ультра-люкс класса</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>x2-x3 в цене</p>
+                    <p class="p3">К концу строительства</p>
+                </div>
+                <div class="bottom_line_box">
+                    <p>Q2 2028</p>
+                    <p class="p3">Сдача проекта</p>
+                </div>
+                <button class="brown_btn">Получить предложение</button>
+            </div>
+        </div>
+    </section>
+    <div class="widget_top">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="2" fill="#68462F"/>
+                <rect width="32" height="32" rx="2" fill="black" fill-opacity="0.2"/>
+                <path opacity="0.8" d="M8.24725 19.0077C7.8836 19.4237 7.92608 20.0554 8.34173 20.4191C8.75775 20.7824 9.38946 20.7399 9.75311 20.3242L15.9999 13.1846L22.2471 20.3246C22.6108 20.7406 23.2425 20.7827 23.6581 20.4194C24.0742 20.0558 24.1166 19.4241 23.753 19.0081L16.7529 11.0082C16.5632 10.791 16.2885 10.6665 15.9999 10.6665C15.7114 10.6665 15.4371 10.791 15.247 11.0082L8.24725 19.0077Z" fill="#FEFEFE"/>
+            </svg>
+        </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
