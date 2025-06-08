@@ -161,8 +161,45 @@ document.addEventListener('DOMContentLoaded', function() {
             images[index].classList.add('active');
         });
     });
+    const dropdownBtn = document.querySelector('.dropdown_mobile');
+    const tabsPlan = document.querySelector('.tabs_plan');
+
+    if (dropdownBtn && tabsPlan) {
+        // Инициализация - скрываем меню
+        tabsPlan.style.display = 'none';
+        tabsPlan.style.position = 'absolute';
+        tabsPlan.style.zIndex = '100';
+
+        dropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Предотвращаем всплытие
+
+            if (tabsPlan.style.display === 'none' || tabsPlan.style.display === '') {
+                tabsPlan.style.display = 'flex';
+            } else {
+                tabsPlan.style.display = 'none';
+            }
+        });
+
+        // Закрытие при клике на кнопку в меню
+        const tabButtons = tabsPlan.querySelectorAll('.tabs_btn');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                tabsPlan.style.display = 'none';
+            });
+        });
+
+        // Закрытие при клике вне меню
+        document.addEventListener('click', function() {
+            tabsPlan.style.display = 'none';
+        });
+
+        // Предотвращаем закрытие при клике внутри меню
+        tabsPlan.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
     // Табы с планировками
-    const planTabs = document.querySelectorAll('.tabs_blan .tabs_btn');
+    const planTabs = document.querySelectorAll('.tabs_plan .tabs_btn');
     const planContents = document.querySelectorAll('.content_plan_tabs .content_tab');
 
     // Сначала скрываем все кроме первого

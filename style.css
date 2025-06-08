@@ -643,6 +643,13 @@ header {
     width: 100%;
 }
 
+.section_mobile_eden_house,
+.advantages_mob,
+.dropdown_mobile,
+.bottom_line_mob {
+    display: none;
+}
+
 @media screen and (max-width: 1280px) {
     section {
         padding: 60px 0;
@@ -653,12 +660,40 @@ header {
     .main .main_flex .main_flex_box {
         padding: 15px 22px;
     }
+    .section_bottom_line {
+        padding: 10px 0;
+    }
+    .bottom_line_mob {
+        display: flex !important;
+    }
+    .bottom_line_mob .transparent_btn {
+        color: #2DB742;
+        border-color: #2DB742;
+        margin-left: 10px;
+    }
+    .bottom_line_mob button {
+        flex: 1 1 calc(50% - 10px);
+        min-width: unset;
+    }
 }
 
 @media screen and (max-width: 668px) {
+    header {
+        padding: 14px 0;
+    }
+    .header {
+        padding: 0 15px;
+    }
+    .header .logo {
+        width: 100px;
+    }
+    .header .logo img {
+        width: 100%;
+    }
     h2 {
         font-size: 24px;
         letter-spacing: 0;
+        font-weight: 500;
     }
     h3 {
         color: var(--BG2-color);
@@ -686,6 +721,9 @@ header {
     }
     .wrapper {
         padding: 0 16px;
+    }
+    .section_main {
+        height: auto;
     }
     .main {
         justify-content: start;
@@ -744,6 +782,14 @@ header {
         border-radius: 5px;
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(15px);
+    }
+    .widget_top {
+        right: 16px;
+        bottom: 80px;
+    }
+    .widget_top button {
+        width: 32px;
+        height: 32px;
     }
 }
 
