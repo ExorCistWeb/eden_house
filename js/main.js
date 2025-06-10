@@ -166,31 +166,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (dropdownBtn && tabsPlan) {
         // Инициализация - скрываем меню
-        tabsPlan.style.display = 'none';
-        tabsPlan.style.position = 'absolute';
-        tabsPlan.style.zIndex = '100';
+        tabsPlan.classList.remove('drop_plan');
 
         dropdownBtn.addEventListener('click', function(e) {
             e.stopPropagation(); // Предотвращаем всплытие
-
-            if (tabsPlan.style.display === 'none' || tabsPlan.style.display === '') {
-                tabsPlan.style.display = 'flex';
-            } else {
-                tabsPlan.style.display = 'none';
-            }
+            tabsPlan.classList.toggle('drop_plan');
         });
 
         // Закрытие при клике на кнопку в меню
         const tabButtons = tabsPlan.querySelectorAll('.tabs_btn');
         tabButtons.forEach(button => {
             button.addEventListener('click', function() {
-                tabsPlan.style.display = 'none';
+                tabsPlan.classList.remove('drop_plan');
             });
         });
 
         // Закрытие при клике вне меню
         document.addEventListener('click', function() {
-            tabsPlan.style.display = 'none';
+            tabsPlan.classList.remove('drop_plan');
         });
 
         // Предотвращаем закрытие при клике внутри меню
@@ -198,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
         });
     }
+
     // Табы с планировками
     const planTabs = document.querySelectorAll('.tabs_plan .tabs_btn');
     const planContents = document.querySelectorAll('.content_plan_tabs .content_tab');
@@ -306,4 +300,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Модалка
+    // Находим все кнопки с data-index
+    const buttons = document.querySelectorAll('[data-index]');
+
+    // Назначаем обработчик клика
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalName = button.getAttribute('data-index');
+            const modal = document.querySelector(`[data-index-form="${modalName}"]`);
+
+            if (modal) {
+                modal.style.display = 'block';
+                // Блокируем скролл страницы
+                document.body.classList.add('no-scroll');
+            } else {
+                console.error('Модальное окно с data-index-form="' + modalName + '" не найдено!');
+            }
+        });
+    });
+
+    // Закрытие модальных окон при клике на крестик или вне окна
+    document.querySelectorAll('.modal').forEach(modal => {
+        const closeBtn = modal.querySelector('.close-btn');
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            // Разблокируем скролл страницы
+            document.body.classList.remove('no-scroll');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                // Разблокируем скролл страницы
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    });
 });

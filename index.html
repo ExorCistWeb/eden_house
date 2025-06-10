@@ -19,7 +19,7 @@
                 </a>
                 <div class="header_right_content flex_a">
                     <a href="" class="wa_link flex_a"><img src="./img/icon/wa.svg" alt="img"></a>
-                    <button class="white_border_btn">Заказать звонок</button>
+                    <button class="white_border_btn" data-index="dBroshyr">Заказать звонок</button>
                     <div class="lang_selector" id="langSelector">
                         <div class="select_lang flex_a">
                             <img src="./img/icon/ru.svg" alt="Русский">
@@ -227,7 +227,7 @@
                         <div class="advantages_box_img">
                             <img src="./img/advantages/1.jpg" alt="">
                         </div>
-                        <div class="advantages_info">
+                        <div class="advantages_info_text">
                             <span>01</span>
                             <p>Общественные пространства</p>
                         </div>
@@ -236,7 +236,7 @@
                         <div class="advantages_box_img">
                             <img src="./img/advantages/2.jpg" alt="">
                         </div>
-                        <div class="advantages_info">
+                        <div class="advantages_info_text">
                             <span>02</span>
                             <p>Открытый и крытый бассейны</p>
                         </div>
@@ -245,7 +245,7 @@
                         <div class="advantages_box_img">
                             <img src="./img/advantages/3.jpg" alt="">
                         </div>
-                        <div class="advantages_info">
+                        <div class="advantages_info_text">
                             <span>03</span>
                             <p>Фитнес-центр с тренажерным залом</p>
                         </div>
@@ -254,7 +254,7 @@
                         <div class="advantages_box_img">
                             <img src="./img/advantages/4.jpg" alt="">
                         </div>
-                        <div class="advantages_info">
+                        <div class="advantages_info_text">
                             <span>04</span>
                             <p>Спа-зона с сауной</p>
                         </div>
@@ -263,7 +263,7 @@
                         <div class="advantages_box_img">
                             <img src="./img/advantages/5.jpg" alt="">
                         </div>
-                        <div class="advantages_info">
+                        <div class="advantages_info_text">
                             <span>05</span>
                             <p>Приватные озелененные дворики</p>
                         </div>
@@ -314,6 +314,12 @@
                     <div class="swiper-slide">
                         <img src="./img/exterer/3.jpg" />
                     </div>
+                    <div class="swiper-slide">
+                        <img src="./img/exterer/4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/exterer/5.jpg" />
+                    </div>
                 </div>
                 <div class="swiper-button-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -344,6 +350,12 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="./img/exterer/3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/exterer/4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/exterer/5.jpg" />
                     </div>
                 </div>
             </div>
@@ -526,13 +538,18 @@
                             <p class="p2">Круглосуточное обслуживание, включая услуги личного шеф-повара, шофера, няни для детей, персонального тренера и флориста. </p>
                         </li>
                     </ul>
-                    <button class="white_btn">Скачать материалы проекта
+                    <button class="white_btn infrastructure_title_btn">Скачать материалы проекта
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M9.99229 1.66577C9.53229 1.66577 9.15896 2.03886 9.15896 2.49911V11.3008L6.65895 8.82745L5.48728 9.99911L9.39313 13.9316C9.71896 14.2566 10.2656 14.2566 10.5915 13.9316L14.4973 9.99911L13.3256 8.82745L10.8256 11.3008V2.49911C10.8256 2.03886 10.4523 1.66569 9.99229 1.66577ZM3.32561 11.6658C2.86561 11.6658 2.49228 12.0391 2.49228 12.4991V14.1658C2.49228 16.0066 3.98478 17.4991 5.82562 17.4991H14.159C15.9998 17.4991 17.4923 16.0066 17.4923 14.1658V12.4991C17.4923 12.0391 17.119 11.6658 16.659 11.6658C16.199 11.6658 15.8256 12.0391 15.8256 12.4991V14.1658C15.8256 15.0866 15.0798 15.8325 14.159 15.8325H5.82562C4.90478 15.8325 4.15895 15.0866 4.15895 14.1658V12.4991C4.15895 12.0391 3.78561 11.6658 3.32561 11.6658Z" fill="#222222"/>
                         </svg>
                     </button>
                 </div>
             </div>
+            <button class="white_btn infrastructure_title_btn_mob">Скачать материалы проекта
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.99229 1.66577C9.53229 1.66577 9.15896 2.03886 9.15896 2.49911V11.3008L6.65895 8.82745L5.48728 9.99911L9.39313 13.9316C9.71896 14.2566 10.2656 14.2566 10.5915 13.9316L14.4973 9.99911L13.3256 8.82745L10.8256 11.3008V2.49911C10.8256 2.03886 10.4523 1.66569 9.99229 1.66577ZM3.32561 11.6658C2.86561 11.6658 2.49228 12.0391 2.49228 12.4991V14.1658C2.49228 16.0066 3.98478 17.4991 5.82562 17.4991H14.159C15.9998 17.4991 17.4923 16.0066 17.4923 14.1658V12.4991C17.4923 12.0391 17.119 11.6658 16.659 11.6658C16.199 11.6658 15.8256 12.0391 15.8256 12.4991V14.1658C15.8256 15.0866 15.0798 15.8325 14.159 15.8325H5.82562C4.90478 15.8325 4.15895 15.0866 4.15895 14.1658V12.4991C4.15895 12.0391 3.78561 11.6658 3.32561 11.6658Z" fill="#222222"/>
+                        </svg>
+                    </button>
         </div>
     </section>
     <section class="section_conditions">
@@ -558,9 +575,14 @@
             <div class="conditions_box conditions_full">
                 <div class="conditions_full_cont">
                     <p>Рассрочка 0%. Выгодно и удобно для перепродажи или для проживания</p>
+                    <button class="brown_btn conditions_box_mob">Скачать платежный план 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M10.4923 2.16577C10.0323 2.16577 9.65893 2.53886 9.65893 2.99911V11.8008L7.15892 9.32745L5.98725 10.4991L9.8931 14.4316C10.2189 14.7566 10.7656 14.7566 11.0914 14.4316L14.9973 10.4991L13.8256 9.32745L11.3256 11.8008V2.99911C11.3256 2.53886 10.9523 2.16569 10.4923 2.16577ZM3.82558 12.1658C3.36558 12.1658 2.99225 12.5391 2.99225 12.9991V14.6658C2.99225 16.5066 4.48475 17.9991 6.32559 17.9991H14.6589C16.4998 17.9991 17.9923 16.5066 17.9923 14.6658V12.9991C17.9923 12.5391 17.6189 12.1658 17.1589 12.1658C16.6989 12.1658 16.3256 12.5391 16.3256 12.9991V14.6658C16.3256 15.5866 15.5798 16.3325 14.6589 16.3325H6.32559C5.40475 16.3325 4.65892 15.5866 4.65892 14.6658V12.9991C4.65892 12.5391 4.28558 12.1658 3.82558 12.1658Z" fill="#F7F6F0"/>
+                    </svg>
+                </button>
                     <p class="p3">*Оригинальный платежный план на день старта продаж</p>
                 </div>
-                <button class="brown_btn">Скачать платежный план 
+                <button class="brown_btn conditions_box_pc">Скачать платежный план 
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                         <path d="M10.4923 2.16577C10.0323 2.16577 9.65893 2.53886 9.65893 2.99911V11.8008L7.15892 9.32745L5.98725 10.4991L9.8931 14.4316C10.2189 14.7566 10.7656 14.7566 11.0914 14.4316L14.9973 10.4991L13.8256 9.32745L11.3256 11.8008V2.99911C11.3256 2.53886 10.9523 2.16569 10.4923 2.16577ZM3.82558 12.1658C3.36558 12.1658 2.99225 12.5391 2.99225 12.9991V14.6658C2.99225 16.5066 4.48475 17.9991 6.32559 17.9991H14.6589C16.4998 17.9991 17.9923 16.5066 17.9923 14.6658V12.9991C17.9923 12.5391 17.6189 12.1658 17.1589 12.1658C16.6989 12.1658 16.3256 12.5391 16.3256 12.9991V14.6658C16.3256 15.5866 15.5798 16.3325 14.6589 16.3325H6.32559C5.40475 16.3325 4.65892 15.5866 4.65892 14.6658V12.9991C4.65892 12.5391 4.28558 12.1658 3.82558 12.1658Z" fill="#F7F6F0"/>
                     </svg>
@@ -619,6 +641,7 @@
         <div class="wrapper">
             <div class="title_plan center_text flex_a flex_f">
                 <h2>Планировки Eden House Za’abeel</h2>
+
                 <button class="brown_btn dropdown_mobile">Выберите тип виллы 
 
                     ↓
@@ -831,7 +854,9 @@
                             <button class="brown_btn">Оставить заявку</button>
                         </form>
                         <div class="form_bottom_content flex_a flex_f">
-                            <p class="p3 flex_a">или быстрая связь в <span class="flex_a"><img src="./img/icon/wa_form.svg" alt="WhatsApp">WhatsApp</span></p>
+                            <p class="p3 flex_a">или быстрая связь в
+                                <a href="" class="flex_a"><img src="./img/icon/wa_form.svg" alt="WhatsApp">WhatsApp</a>
+                            </p>
                             <div class="garant_info flex_a">
                                 <div class="garant_img">
                                     <img src="./img/icon/garant.png" alt="гарант">
@@ -896,7 +921,7 @@
                             <p class="p2"><b>WhatsApp</b></p>
                         </a>
                         <a href="" class="tel_info flex_a "><img src="./img/icon/tel.svg" alt="img">
-                            <p class="p2"><b>+971 11 111 1111</b></p>
+                            <p class="p2"><b>+971 54 382 1095</b></p>
                         </a>
                     </div>
                     <p class="p3">Используя наш сайт, вы соглашаетесь с <a href="">политикой конфиденциальности</a> и <a href="">условиями оферты</a></p>
@@ -927,7 +952,12 @@
             </div>
             <div class="bottom_line_mob flex_a">
                 <button class="brown_btn">Оставить заявку</button>
-                <button class="transparent_btn"><img src="./img/icon/wa_green.svg" alt="">WhatsApp</button>
+                <button class="transparent_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                        <path d="M17.571 2.92891C15.6822 1.04016 13.171 0 10.4999 0C10.4998 0 10.5 0 10.4998 0C7.82898 0 5.31758 1.04027 3.42891 2.92891C1.5402 4.81766 0.5 7.32887 0.5 10C0.500078 11.7004 0.932813 13.3716 1.75359 14.8497L0.521641 19.2563C0.464688 19.46 0.522031 19.6787 0.671641 19.8283C0.82125 19.9779 1.03984 20.0352 1.24375 19.9783L5.65043 18.7463C7.1284 19.5672 8.79953 20 10.5 20C13.1711 20 15.6823 18.9598 17.5711 17.0711C19.4599 15.1823 20.5 12.6711 20.5 9.99996C20.4999 7.32883 19.4597 4.81766 17.571 2.92891ZM10.4999 18.8281C8.92391 18.8281 7.37691 18.4073 6.02605 17.6113C5.93508 17.5577 5.83227 17.5302 5.72859 17.5302C5.6757 17.5302 5.62266 17.5373 5.57082 17.5518L1.93043 18.5695L2.94816 14.9293C2.99109 14.7757 2.96961 14.6114 2.88871 14.4741C2.0927 13.123 1.67195 11.5759 1.67188 9.99996C1.67188 7.64187 2.59016 5.42496 4.25758 3.75754C5.925 2.09012 8.14191 1.17188 10.4999 1.17188C15.3677 1.17188 19.328 5.13215 19.3281 9.99996C19.3281 14.8678 15.3678 18.8281 10.4999 18.8281Z" fill="#00A854"/>
+                        <path d="M14.8164 10.7496C14.4582 10.3914 13.9806 10.1942 13.4715 10.1942C12.9625 10.1942 12.4849 10.3914 12.1268 10.7496L11.8552 11.0212C11.7882 11.0882 11.6981 11.1251 11.6017 11.1251C11.5052 11.1251 11.4151 11.0882 11.348 11.0211L9.47797 9.15106C9.41098 9.0841 9.37411 8.99402 9.37407 8.8975C9.37407 8.80098 9.4109 8.71098 9.47782 8.64406L9.74954 8.37238C10.4911 7.63086 10.4911 6.4243 9.74957 5.68277L9.20618 5.13922C8.84793 4.78113 8.37035 4.58398 7.86133 4.58398C7.35231 4.58398 6.87473 4.78117 6.51653 5.13938L6.11137 5.54461C5.25477 6.40121 4.94383 7.67684 5.23575 9.1366C5.51047 10.5102 6.29575 11.9007 7.44696 13.0521C8.8977 14.5027 10.7454 15.3688 12.3895 15.3689H12.3898C13.4258 15.3689 14.3127 15.0297 14.9545 14.3879L15.3597 13.9827C16.1012 13.2412 16.1012 12.0345 15.3597 11.2929L14.8164 10.7496ZM14.5311 13.1541L14.1259 13.5593C13.7086 13.9765 13.1084 14.197 12.3899 14.197H12.3897C11.0494 14.1969 9.51141 13.4591 8.27567 12.2235C7.28621 11.2339 6.61473 10.0561 6.38493 8.9068C6.17231 7.84363 6.36946 6.94391 6.94008 6.37324L7.3452 5.96805C7.48203 5.83125 7.66532 5.7559 7.86137 5.7559C8.0575 5.7559 8.24086 5.83125 8.37762 5.96797L8.92094 6.51141C9.20555 6.79605 9.20555 7.25914 8.92098 7.54375L8.64926 7.81543C8.36094 8.10371 8.20219 8.48809 8.20223 8.8977C8.20227 9.30723 8.3611 9.69156 8.64938 9.97981L10.5194 11.8498C10.8078 12.1382 11.1922 12.297 11.6017 12.297C12.0112 12.297 12.3955 12.1382 12.6838 11.85L12.9555 11.5783C13.0923 11.4415 13.2755 11.3661 13.4716 11.3661C13.6676 11.3661 13.8509 11.4415 13.9878 11.5784L14.5311 12.1217C14.8157 12.4063 14.8157 12.8694 14.5311 13.1541Z" fill="#00A854"/>
+                    </svg>
+                    WhatsApp</button>
             </div>
         </div>
     </section>
@@ -939,6 +969,82 @@
                 <path opacity="0.8" d="M8.24725 19.0077C7.8836 19.4237 7.92608 20.0554 8.34173 20.4191C8.75775 20.7824 9.38946 20.7399 9.75311 20.3242L15.9999 13.1846L22.2471 20.3246C22.6108 20.7406 23.2425 20.7827 23.6581 20.4194C24.0742 20.0558 24.1166 19.4241 23.753 19.0081L16.7529 11.0082C16.5632 10.791 16.2885 10.6665 15.9999 10.6665C15.7114 10.6665 15.4371 10.791 15.247 11.0082L8.24725 19.0077Z" fill="#FEFEFE"/>
             </svg>
         </button>
+    </div>
+    <div data-index-form="dBroshyr" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+
+            <div class="modal-left">
+                <h3>Скачать PDF Брошюру Eden House Za’abeel</h3>
+                <p class="p3">Поделитесь своим номером <span style="color: #00A854;">WhatsApp</span>, и получите персональную PDF-презентацию</p>
+                <div class="mob_pdf_cont">
+
+                    <div class="images">
+                        <div class="modal_img">
+                            <img src="./img/modal/1.jpg" alt="img">
+                        </div>
+                        <div class="modal_img">
+                            <img src="./img/modal/2.jpg" alt="img">
+                        </div>
+                        <div class="modal_img">
+                            <img src="./img/modal/6.jpg" alt="img">
+                        </div>
+                    </div>
+                    <p class="p2"><b>PDF Презентация 31.2 MB</b></p>
+                </div>
+                <form action="">
+
+                    <label for="">Имя</label>
+                    <input type="text">
+
+                    <label for="">Номер телефона</label>
+                    <input type="text">
+
+                    <label for="">Сообщение (опционально)</label>
+                    <textarea></textarea>
+
+                    <button class="brown_btn">Скачать PDF Брошюру</button>
+                </form>
+                <div class="form_bottom_content flex_a flex_f">
+                    <p class="p3 flex_a">или быстрая связь в
+                        <a href="" class="flex_a"><img src="./img/icon/wa_form.svg" alt="WhatsApp">WhatsApp</a>
+                    </p>
+                    <div class="garant_info flex_a">
+                        <div class="garant_img">
+                            <img src="./img/icon/garant.png" alt="гарант">
+                        </div>
+                        <p class="p3">Гарантируем конфиденциальность и защиту ваших данных</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-right">
+                <h3>PDF Презентация</h3>
+                <p class="p2"><b>31.2 MB</b></p>
+                <div class="images">
+                    <div class="modal_img">
+                        <img src="./img/modal/1.jpg" alt="img">
+                    </div>
+                    <div class="modal_img">
+                        <img src="./img/modal/2.jpg" alt="img">
+                    </div>
+                    <div class="modal_img">
+                        <img src="./img/modal/3.jpg" alt="img">
+                    </div>
+
+                    <div class="modal_img">
+                        <img src="./img/modal/4.jpg" alt="img">
+                    </div>
+                    <div class="modal_img">
+                        <img src="./img/modal/5.jpg" alt="img">
+                    </div>
+                    <div class="modal_img">
+                        <img src="./img/modal/6.jpg" alt="img">
+                    </div>
+                </div>
+                <p class="p3">Укажите свои контакты, чтобы получить персональную презентацию. Воспользуйтесь уникальной возможностью.</p>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
